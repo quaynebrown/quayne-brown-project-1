@@ -1,0 +1,505 @@
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+figcaption,
+figure,
+main {
+    display: block;
+}
+figure {
+    margin: 1em 40px;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+b,
+strong {
+    font-weight: inherit;
+}
+b,
+strong {
+    font-weight: bolder;
+}
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+dfn {
+    font-style: italic;
+}
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+small {
+    font-size: 80%;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sub {
+    bottom: -0.25em;
+}
+sup {
+    top: -0.5em;
+}
+audio,
+video {
+    display: inline-block;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+img {
+    border-style: none;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+button,
+input {
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+progress {
+    display: inline-block;
+    vertical-align: baseline;
+}
+textarea {
+    overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+details,
+menu {
+    display: block;
+}
+summary {
+    display: list-item;
+}
+canvas {
+    display: inline-block;
+}
+template {
+    display: none;
+}
+[hidden] {
+    display: none;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* ****************** MY STYLE STARTS HERE ******************* */
+/* 
+    FONTS
+        font-family: 'Catamaran', sans-serif;    
+        font-family: 'Pacifico', cursive;
+*/
+
+/* GLOBAL STYLE */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    font-family: "Catamaran", sans-serif;
+    line-height: 29px;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1280px;
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+}
+
+figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+}
+
+h1,
+h2, h3 {
+    font-family: "Pacifico", cursive;
+}
+
+/* HEADER STYLE */
+header {
+    background-image: url("/biker-land-assets/image-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+h1 {
+    color: #f2a11c;
+    font-size: 13rem;
+    padding-top: 220px;
+}
+
+.header__nav ul,
+h1 {
+    text-align: center;
+}
+
+.header__nav{
+    padding-top: 5px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.5s;
+}
+
+/* MAIN STYLE */
+h2 {
+    font-size: 4.2rem;
+    color: #1f2022;
+}
+
+header a:hover, header a:focus, footer a:hover, footer a:focus{
+    color: #f2a11c;
+}
+
+.about,
+.our__mission {
+    background-color: #f4f4f4;
+}
+
+.about__content {
+    padding: 120px 100px 100px 140px;
+}
+
+.our__mission__content {
+    padding: 120px 100px 100px 90px;
+}
+
+.read__more {
+    color: #f2a11c;
+    text-transform: uppercase;
+    background-color: #1f2022;
+    border: 2px solid #1f2022;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 5px;
+    transition: border 0.5s, color 0.5s;
+}
+
+.read__more:hover, 
+.read__more:focus{
+    border: 2px solid #f2a11c;
+    color: #ffffff;
+}
+
+.float__item {
+    float: left;
+    width: 50%;
+}
+
+/* MEET ALISSA style */
+
+.meet__alissa {
+    padding: 100px 0;
+}
+.meet__alissa figure {
+    width: calc(30% - 50px);
+    float: left;
+    margin-right: 50px;
+}
+
+.meet__alissa article {
+    width: 70%;
+    float: left;
+}
+
+.meet__alissa img {
+    width: 100%;
+    height: auto;
+}
+
+/* LINKS style */
+.links {
+    height: auto;
+    background-image: url("/biker-land-assets/image-5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.links ul{
+    text-align: center;
+}
+
+.links p{
+    color: #f2a11c;
+    font-weight: 700;
+    font-size: 3rem;
+    padding-bottom: 150px;
+}
+
+i {
+    font-size: 6rem;
+    padding: 200px 90px 5px 90px;
+}
+
+/* GALLERY STYLE */
+
+.gallery{
+    padding: 60px 0;
+}
+.gallery h2{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.gallery li{
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    padding: 0;
+    width: calc((100vw / 3 ) - 80px);
+    height: calc((100vw / 3 ) - 80px);
+    max-width: calc((1280px / 3) - 40px);
+    max-height: calc((1280px / 3) - 40px);
+}
+
+/* .gallery li:first-child{
+    margin-left: 0;
+}
+
+/* .gallery li:last-child img{
+    
+} */ */
+
+.gallery li:last-child{
+    margin-right: 0;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+}
+
+/* CONTACT STYLE */
+.contact{
+    background-color: #1f2022;
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+.contact nav a{
+    text-transform: uppercase;
+}
+
+.contact ul{
+    text-align: center;
+}
+
+h3{
+    color: #f2a11c;
+}
+
+.contact__info, .subscription{
+    width: 50%;
+    float: left;
+}
+
+input[type="email"]{
+    padding: 15px;
+    line-height: 2.9rem;
+    border: none;
+    width: 70%;
+    float: left;
+}
+
+button{
+    padding:15px;
+    display: block;
+    width: 30%;
+    background-color: #f2a11c;
+    border: none;
+    float: left;
+    text-align: center;
+    line-height: 2.9rem;
+}
+
+footer{
+    color: #4a4a4a;
+    background-color: #000;
+    text-align: center;
+    padding: 5px;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a{
+    color: #4a4a4a;
+}
+
+
+
+
+/* making sure the image lined up properly on screens with viewport bigger than 2125px */
+@media(min-width: 2125px){
+    /* TODO: try to use VW to size image contain */
+    .about .image__container img,
+    .our__mission .image__container img{
+        width: 110%;
+        height: 536px;
+    }
+}
