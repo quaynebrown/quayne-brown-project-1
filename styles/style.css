@@ -248,6 +248,7 @@ figure {
 
 img {
     display: block;
+    object-fit: cover;
     /* width: 100%; */
     /* height: auto; */
 }
@@ -338,24 +339,35 @@ header a:hover, header a:focus, footer a:hover, footer a:focus{
     background-color: #f4f4f4;
 }
 
-.about .image__container{
+.about .hidden-container{
     height: auto;
+    float: right;
+    background-image: url('../biker-land-assets/image-2.jpg');
+    background-size: cover;
+}
+
+.hidden-content{
+    visibility: hidden;
 }
 
 .about__content {
-    padding: 120px 100px 100px 140px;
+    padding: 120px 100px 100px 7.5%;
 }
 
 .our__mission__content {
     padding: 120px 100px 100px 90px;
+    
+}
+
+.our__mission__content:first-child{
+    background-image: url('../biker-land-assets/image-7.jpg');
+    background-size: cover;
 }
 
 .float__item {
     float: left;
     width: 50%;
 }
-
-
 
 .read__more {
     color: #f2a11c;
@@ -430,19 +442,23 @@ i {
     padding-bottom: 60px;
 }
 
-.gallery li{
+.gallery__image-container{
     float: left;
     margin-right: 40px;
     margin-bottom: 40px;
     padding: 0;
-    width: calc((100vw / 3 ) - 80px);
-    height: calc((100vw / 3 ) - 80px);
+    width: calc((95vw / 3 ) - 40px);
+    height: calc((95vw / 3 ) - 40px);
     max-width: calc((1280px / 3) - 40px);
     max-height: calc((1280px / 3) - 40px);
 }
 
-.gallery li:last-child{
-    margin-right: 0;
+.gallery__image-container:last-child{   
+    margin: 0;
+    /* width: calc((100vw / 3 ) - 40px);
+    height: calc((100vw / 3 ) - 40px);
+    max-width: calc((1280px / 3) - 40px);
+    max-height: calc((1280px / 3) - 40px); */
 }
 
 .gallery img{
