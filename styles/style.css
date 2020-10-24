@@ -416,14 +416,6 @@ i {
     max-height: calc((1280px / 3) - 40px);
 }
 
-/* .gallery li:first-child{
-    margin-left: 0;
-}
-
-/* .gallery li:last-child img{
-    
-} */ */
-
 .gallery li:last-child{
     margin-right: 0;
 }
@@ -474,6 +466,12 @@ button{
     float: left;
     text-align: center;
     line-height: 2.9rem;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+button:hover, button:focus{
+    color: #ffffff;
+    text-shadow: 2px 2px #1f2022;
 }
 
 footer{
