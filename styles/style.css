@@ -223,11 +223,6 @@ html {
 }
 
 /* ****************** MY STYLE STARTS HERE ******************* */
-/* 
-    FONTS
-        font-family: 'Catamaran', sans-serif;    
-        font-family: 'Pacifico', cursive;
-*/
 
 /* GLOBAL STYLE */
 html {
@@ -243,7 +238,6 @@ body {
 .wrapper {
     width: 90%;
     max-width: 1280px;
-    /* border: 1px solid blue; */
     margin: 0 auto;
 }
 
@@ -254,9 +248,8 @@ figure {
 
 img {
     display: block;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+    /* width: 100%; */
+    /* height: auto; */
 }
 
 ul {
@@ -314,9 +307,14 @@ header a:hover, header a:focus, footer a:hover, footer a:focus{
     color: #f2a11c;
 }
 
+/* ABOUT and OUR MISSION style */
 .about,
 .our__mission {
     background-color: #f4f4f4;
+}
+
+.about .image__container{
+    height: auto;
 }
 
 .about__content {
@@ -326,6 +324,13 @@ header a:hover, header a:focus, footer a:hover, footer a:focus{
 .our__mission__content {
     padding: 120px 100px 100px 90px;
 }
+
+.float__item {
+    float: left;
+    width: 50%;
+}
+
+
 
 .read__more {
     color: #f2a11c;
@@ -342,11 +347,6 @@ header a:hover, header a:focus, footer a:hover, footer a:focus{
 .read__more:focus{
     border: 2px solid #f2a11c;
     color: #ffffff;
-}
-
-.float__item {
-    float: left;
-    width: 50%;
 }
 
 /* MEET ALISSA style */
