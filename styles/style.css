@@ -236,7 +236,7 @@ body {
 }
 
 .wrapper {
-    width: 95%;
+    width: 90%;
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -274,6 +274,7 @@ h1 {
     color: #f2a11c;
     font-size: 13rem;
     padding-top: 220px;
+    margin-top: 10rem;
 }
 
 .menuToggle{
@@ -396,7 +397,7 @@ header a:hover, header a:focus, footer a:hover, footer a:focus{
 
 /* LINKS style */
 .links {
-    height: auto;
+    height: 800px;
     background-image: url("/biker-land-assets/image-5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -527,6 +528,34 @@ footer a{
 }
 
 @media(max-width: 920px){
+    /* GLOBAL STYLE */
+    h1{
+        font-size: calc(2rem + 12vw);
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .read-more-container, 
+    .our__mission__content,
+    .about__content{
+        text-align: center;
+    }
+
+    .our__mission__content,
+    .about__content{
+        width: 100%;
+    }
+
+       /* MEET ALISSA STYLE */
+    .meet__alissa .image__container, .meet__alissa article{
+        width: 100%;
+        float: none;
+    }
+
+
+    /* CONTACT STYLE */
 
     .contact{
         padding: 50px 0;
@@ -556,9 +585,19 @@ footer a{
 
 }
 
-@media(max-width: 420px){
+@media(max-width: 720px){
+/* HEADER STYLE */
+    header {
+        background-image: url('../biker-land-assets/image-1-mobile.jpg');
+        height: 80vh;
+        /* background-size: contain; */
+    }
+
+    
+    /* HEADER STYLE */
     .header__nav{
-        background-color: #f4f4f4;
+        /* using rgba color because I want to make the background transparent */
+        background-color: rgba(255, 255, 255, 0.2);
         position: relative;
         top: -300px;
         transition: top 0.5s;
@@ -572,8 +611,8 @@ footer a{
         border: none;
     }
 
-    .header__nav a{
-        color: #1f2022;
+    .menuToggle{
+        height: 0;
     }
 
      .menuToggle [type="checkbox"]:checked + .header__nav {
@@ -587,5 +626,34 @@ footer a{
     .menuToggle i{
         visibility: visible;
         transition: color 1s;
+    }
+
+    .gallery li:last-child{
+        display: none;
+    }
+
+    .gallery li{
+        width: calc((100vw /2) - 100px);
+        height: calc((100vw /2) - 100px);
+    }
+}
+
+@media(max-width: 480px){
+    
+
+
+
+ 
+
+    /* LINKS STYLE */
+
+    /* TODO: position background according to PSD */
+    .link{
+        background-position-x: -1640px;
+        /* background-size: contain; */
+    }
+    .links li{
+        display: block;
+        /* height: 200px; */
     }
 }
