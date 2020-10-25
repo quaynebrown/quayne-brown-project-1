@@ -303,12 +303,12 @@ h1 {
     padding: 0;
 }
 
-.header__nav ul,
+.header-nav ul,
 h1 {
     text-align: center;
 }
 
-.header__nav{
+.header-nav{
     padding-top: 5px;
 }
 
@@ -333,13 +333,15 @@ h2 {
 header a:hover, 
 header a:focus, 
 .contact nav a:hover, 
-.contact nav a:focus{
+.contact nav a:focus,
+footer a:hover, 
+footer nav a:focus{
     color: #f2a11c;
 }
 
 /* ABOUT and OUR MISSION style */
 .about,
-.our__mission {
+.our-mission {
     background-color: #f4f4f4;
 }
 
@@ -354,26 +356,26 @@ header a:focus,
     visibility: hidden;
 }
 
-.about__content {
+.about-content {
     padding: 120px 100px 100px 7.5%;
 }
 
-.our__mission__content {
+.our-mission-content {
     padding: 120px 100px 100px 90px;
     
 }
 
-.our__mission__content:first-child{
+.our-mission-content:first-child{
     background-image: url('../biker-land-assets/image-7.jpg');
     background-size: cover;
 }
 
-.float__item {
+.float-item {
     float: left;
     width: 50%;
 }
 
-.read__more {
+.read-more {
     color: #f2a11c;
     text-transform: uppercase;
     background-color: #1f2022;
@@ -384,29 +386,29 @@ header a:focus,
     transition: border 0.5s, color 0.5s;
 }
 
-.read__more:hover, 
-.read__more:focus{
+.read-more:hover, 
+.read-more:focus{
     border: 2px solid #f2a11c;
     color: #ffffff;
 }
 
 /* MEET ALISSA style */
 
-.meet__alissa {
+.meet-alissa {
     padding: 100px 0;
 }
-.meet__alissa figure {
+.meet-alissa figure {
     width: calc(30% - 50px);
     float: left;
     margin-right: 50px;
 }
 
-.meet__alissa article {
+.meet-alissa article {
     width: 70%;
     float: left;
 }
 
-.meet__alissa img {
+.meet-alissa img {
     width: 100%;
     height: auto;
 }
@@ -449,7 +451,7 @@ i{
     padding-bottom: 60px;
 }
 
-.gallery__image-container{
+.gallery-image-container{
     float: left;
     margin-right: 40px;
     margin-bottom: 40px;
@@ -460,7 +462,7 @@ i{
     max-height: calc((1280px / 3) - 40px);
 }
 
-.gallery__image-container:last-child{   
+.gallery-image-container:last-child{   
     margin: 0;
 }
 
@@ -488,7 +490,7 @@ h3{
     color: #f2a11c;
 }
 
-.contact__info, .subscription{
+.contact-info, .subscription{
     width: 50%;
     float: left;
 }
@@ -539,8 +541,8 @@ footer a{
 /* making sure the image lined up properly on screens with viewport bigger than 2125px */
 @media(min-width: 2125px){
     /* TODO: try to use VW to size image contain */
-    .about .image__container img,
-    .our__mission .image__container img{
+    .about .image-container img,
+    .our-mission .image-container img{
         width: 110%;
         height: 536px;
     }
@@ -557,14 +559,14 @@ footer a{
     }
 
     .read-more-container, 
-    .our__mission__content,
-    .about__content{
+    .our-mission-content,
+    .about-content{
         text-align: center;
         padding: 40px 20px;
     }
 
-    .our__mission__content,
-    .about__content{
+    .our-mission-content,
+    .about-content{
         width: 100%;
     }
 
@@ -578,7 +580,7 @@ footer a{
     }
 
        /* MEET ALISSA STYLE */
-    .meet__alissa .image__container, .meet__alissa article{
+    .meet-alissa .image-container, .meet-alissa article{
         width: 100%;
         float: none;
     }
@@ -590,15 +592,15 @@ footer a{
         padding: 50px 0;
     }
 
-    .footer__list{
+    .footer-list{
         margin: 0;
     }
 
-    .footer__list li {
+    .footer-list li {
         width: calc((100% / 4) - 10px);
     }
 
-    .contact__info, .subscription{
+    .contact-info, .subscription{
         width: 100%;
         text-align: center;
     }
@@ -624,19 +626,19 @@ footer a{
 
     
     /* HEADER STYLE */
-    .header__nav{
+    .header-nav{
         /* using rgba color because I want to make the background transparent */
         background-color: rgba(255, 255, 255, 0.2);
         position: relative;
         top: -300px;
         transition: top 0.5s;
     }
-    .header__nav li{
+    .header-nav li{
         display: block;
         border-bottom: 1px dotted #1f2022;
     }
 
-    .header__nav li:last-child{
+    .header-nav li:last-child{
         border: none;
     }
 
@@ -644,7 +646,7 @@ footer a{
         height: 0;
     }
 
-     .menu-toggle [type="checkbox"]:checked + .header__nav {
+     .menu-toggle [type="checkbox"]:checked + .header-nav {
         top: 0;
     }
 
