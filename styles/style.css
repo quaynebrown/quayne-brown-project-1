@@ -278,11 +278,11 @@ h1 {
     margin-top: 10rem;
 }
 
-.menuToggle{
+.menu-toggle{
     position: relative;
 }
 
-.menuToggle [type="checkbox"] {
+.menu-toggle [type="checkbox"] {
     position: absolute;
     top: 35px;
     right: 10px;
@@ -640,19 +640,19 @@ footer a{
         border: none;
     }
 
-    .menuToggle{
+    .menu-toggle{
         height: 0;
     }
 
-     .menuToggle [type="checkbox"]:checked + .header__nav {
+     .menu-toggle [type="checkbox"]:checked + .header__nav {
         top: 0;
     }
 
-     .menuToggle [type="checkbox"]:checked ~ i{
+     .menu-toggle [type="checkbox"]:checked ~ i{
         color: #1f2022;
     }
 
-    .menuToggle i{
+    .menu-toggle i{
         visibility: visible;
         transition: color 1s;
     }
