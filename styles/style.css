@@ -447,18 +447,14 @@ i {
     margin-right: 40px;
     margin-bottom: 40px;
     padding: 0;
-    width: calc((95vw / 3 ) - 40px);
-    height: calc((95vw / 3 ) - 40px);
+    width: calc((100vw / 3 ) - 65px);
+    height: calc((100vw / 3 ) - 65px);
     max-width: calc((1280px / 3) - 40px);
     max-height: calc((1280px / 3) - 40px);
 }
 
 .gallery__image-container:last-child{   
     margin: 0;
-    /* width: calc((100vw / 3 ) - 40px);
-    height: calc((100vw / 3 ) - 40px);
-    max-width: calc((1280px / 3) - 40px);
-    max-height: calc((1280px / 3) - 40px); */
 }
 
 .gallery img{
@@ -557,11 +553,21 @@ footer a{
     .our__mission__content,
     .about__content{
         text-align: center;
+        padding: 40px 20px;
     }
 
     .our__mission__content,
     .about__content{
         width: 100%;
+    }
+
+    /* .about .hidden-container{
+        background-size: 100%;
+        background-repeat: no-repeat;
+    } */
+
+    .hidden-content {
+        font-size: calc(0.5vw );
     }
 
        /* MEET ALISSA STYLE */
@@ -606,7 +612,7 @@ footer a{
     header {
         background-image: url('../biker-land-assets/image-1-mobile.jpg');
         height: 80vh;
-        /* background-size: contain; */
+        /* background-size: 100%; */
     }
 
     
@@ -644,13 +650,17 @@ footer a{
         transition: color 1s;
     }
 
+    .gallery li:nth-child(2){
+        margin-right: 0;
+    }
+
     .gallery li:last-child{
         display: none;
     }
 
     .gallery li{
-        width: calc((100vw /2) - 100px);
-        height: calc((100vw /2) - 100px);
+        width: calc((100vw / 2) - 64px);
+        height: calc((100vw / 2) - 64px);
     }
 }
 
