@@ -449,11 +449,12 @@ i{
 
 .gallery-image-container{
     float: left;
+    position: relative;
     margin-right: 40px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     padding: 0;
     width: calc((100vw / 3 ) - 80px);
-    height: calc((100vw / 3 ) - 80px);
+    height: calc((100vw / 3 ) - 80px); 
     max-width: calc((1280px / 3) - 80px);
     max-height: calc((1280px / 3) - 80px);
 }
@@ -698,12 +699,5 @@ footer a{
         height: calc((100vw / 2.1) - 40px);
         max-width: calc((720px / 2) - 40px);
         max-height: calc((720px / 2) - 40px);
-    }
-}
-
-/* STYLE FOR VIEWPORT 480px AND LOWER */
-@media(max-width: 480px){
-    .link{
-        background-position-x: -1640px;
     }
 }
