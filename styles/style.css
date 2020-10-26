@@ -243,14 +243,11 @@ body {
 
 figure {
     margin: 0;
-    overflow: hidden;
 }
 
 img {
     display: block;
-    object-fit: cover;
-    /* width: 100%; */
-    /* height: auto; */
+    /* object-fit: cover; */
 }
 
 ul {
@@ -258,7 +255,8 @@ ul {
 }
 
 h1,
-h2, h3 {
+h2, 
+h3 {
     font-family: "Pacifico", cursive;
 }
 
@@ -275,7 +273,7 @@ h1 {
     color: #f2a11c;
     font-size: 13rem;
     padding-top: 220px;
-    margin-top: 10rem;
+    text-align: center;
 }
 
 .menu-toggle{
@@ -303,8 +301,7 @@ h1 {
     padding: 0;
 }
 
-.header-nav ul,
-h1 {
+.header-nav ul{
     text-align: center;
 }
 
@@ -335,7 +332,7 @@ header a:focus,
 .contact nav a:hover, 
 .contact nav a:focus,
 footer a:hover, 
-footer nav a:focus{
+footer a:focus{
     color: #f2a11c;
 }
 
@@ -429,15 +426,22 @@ footer nav a:focus{
     color: #f2a11c;
     font-weight: 700;
     font-size: 3rem;
-    /* padding-bottom: 150px; */
 }
+
 
 i{
     font-size: 6rem;
 }
 
+.fa-users, .fa-phone {
+    font-size: 5rem;
+}
+
+.links a:hover{
+    color: #f2a11c;
+}
+
 .link-content {
-    /* display: inline-block; */
     padding: 180px 60px;
 }
 
@@ -456,10 +460,10 @@ i{
     margin-right: 40px;
     margin-bottom: 40px;
     padding: 0;
-    width: calc((100vw / 3 ) - 65px);
-    height: calc((100vw / 3 ) - 65px);
-    max-width: calc((1280px / 3) - 40px);
-    max-height: calc((1280px / 3) - 40px);
+    width: calc((100vw / 3 ) - 80px);
+    height: calc((100vw / 3 ) - 80px);
+    max-width: calc((1280px / 3) - 80px);
+    max-height: calc((1280px / 3) - 80px);
 }
 
 .gallery-image-container:last-child{   
@@ -497,6 +501,7 @@ h3{
 
 input[type="email"]{
     padding: 15px;
+    padding-left: 35px;
     line-height: 2.9rem;
     border: none;
     width: 70%;
@@ -510,7 +515,11 @@ button{
     background-color: #f2a11c;
     border: none;
     float: left;
+    font-size: 1.8rem;
+    /* the font looks more like the one in the PSD with a regular font-weight of 400 */
+    /* font-weight: 700;  */
     text-align: center;
+    text-transform: uppercase;
     line-height: 2.9rem;
     transition: color 0.5s, text-shadow 0.5s;
 }
@@ -580,6 +589,10 @@ footer a{
     }
 
        /* MEET ALISSA STYLE */
+    .meet-alissa {
+        padding: 50px 0 0 0;
+    }
+
     .meet-alissa .image-container, .meet-alissa article{
         width: 100%;
         float: none;
@@ -605,6 +618,10 @@ footer a{
         text-align: center;
     }
 
+    input[type="email"]{
+        padding-left: 15px;
+    }
+
     input[type="email"], button{
         width: 100%;
         text-align: center;
@@ -621,7 +638,6 @@ footer a{
     header {
         background-image: url('../biker-land-assets/image-1-mobile.jpg');
         height: 80vh;
-        /* background-size: 100%; */
     }
 
     
@@ -657,8 +673,12 @@ footer a{
     .menu-toggle i{
         visibility: visible;
         transition: color 1s;
-    }
+    }    
     
+    .our-mission-content, .about-content {
+        padding: 20px 20px;
+    }
+
     .links{
         background-position-x: -700px;
     }
@@ -675,6 +695,14 @@ footer a{
         padding: 0 80px 50px 80px;
     }
 
+    .gallery {
+        padding: 30px 0;
+    }
+
+    .gallery li:nth-child(1){
+        margin-right: 20px;
+    }
+
     .gallery li:nth-child(2){
         margin-right: 0;
     }
@@ -684,27 +712,16 @@ footer a{
     }
 
     .gallery li{
-        width: calc((100vw / 2) - 64px);
-        height: calc((100vw / 2) - 64px);
+        margin-bottom: 0;
+        width: calc((100vw / 2.1) - 40px);
+        height: calc((100vw / 2.1) - 40px);
+        max-width: calc((720px / 2) - 40px);
+        max-height: calc((720px / 2) - 40px);
     }
 }
 
 @media(max-width: 480px){
-    
-
-
-
- 
-
-    /* LINKS STYLE */
-
-    /* TODO: position background according to PSD */
     .link{
         background-position-x: -1640px;
-        /* background-size: contain; */
-    }
-    .links li{
-        display: block;
-        /* height: 200px; */
     }
 }
