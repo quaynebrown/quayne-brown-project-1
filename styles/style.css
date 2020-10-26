@@ -247,7 +247,6 @@ figure {
 
 img {
     display: block;
-    /* object-fit: cover; */
 }
 
 ul {
@@ -280,6 +279,14 @@ h1 {
     position: relative;
 }
 
+.header-nav ul{
+    text-align: center;
+}
+
+.header-nav{
+    padding-top: 5px;
+}
+
 .menu-toggle [type="checkbox"] {
     position: absolute;
     top: 35px;
@@ -301,14 +308,6 @@ h1 {
     padding: 0;
 }
 
-.header-nav ul{
-    text-align: center;
-}
-
-.header-nav{
-    padding-top: 5px;
-}
-
 li {
     list-style: none;
     display: inline-block;
@@ -321,19 +320,36 @@ a {
     transition: color 0.5s;
 }
 
+a:hover, 
+a:focus{
+    color: #f2a11c;
+}
+
 /* MAIN STYLE */
 h2 {
     font-size: 4.2rem;
     color: #1f2022;
 }
 
-header a:hover, 
-header a:focus, 
-.contact nav a:hover, 
-.contact nav a:focus,
-footer a:hover, 
-footer a:focus{
+.read-more {
     color: #f2a11c;
+    text-transform: uppercase;
+    background-color: #1f2022;
+    border: 2px solid #1f2022;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 5px;
+    transition: border 0.5s, color 0.5s;
+}
+
+.read-more:hover, 
+.read-more:focus{
+    border: 2px solid #f2a11c;
+    color: #ffffff;
+}
+
+i{
+    font-size: 6rem;
 }
 
 /* ABOUT and OUR MISSION style */
@@ -359,7 +375,6 @@ footer a:focus{
 
 .our-mission-content {
     padding: 120px 100px 100px 90px;
-    
 }
 
 .our-mission-content:first-child{
@@ -372,27 +387,13 @@ footer a:focus{
     width: 50%;
 }
 
-.read-more {
-    color: #f2a11c;
-    text-transform: uppercase;
-    background-color: #1f2022;
-    border: 2px solid #1f2022;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 5px;
-    transition: border 0.5s, color 0.5s;
-}
-
-.read-more:hover, 
-.read-more:focus{
-    border: 2px solid #f2a11c;
-    color: #ffffff;
-}
-
 /* MEET ALISSA style */
-
 .meet-alissa {
     padding: 100px 0;
+}
+
+.meet-alissa h2 {
+    margin-top: 10px;
 }
 .meet-alissa figure {
     width: calc(30% - 50px);
@@ -428,17 +429,8 @@ footer a:focus{
     font-size: 3rem;
 }
 
-
-i{
-    font-size: 6rem;
-}
-
 .fa-users, .fa-phone {
     font-size: 5rem;
-}
-
-.links a:hover{
-    color: #f2a11c;
 }
 
 .link-content {
@@ -446,10 +438,10 @@ i{
 }
 
 /* GALLERY STYLE */
-
 .gallery{
     padding: 60px 0;
 }
+
 .gallery h2{
     text-align: center;
     padding-bottom: 60px;
@@ -544,19 +536,7 @@ footer a{
     color: #4a4a4a;
 }
 
-
-
-
-/* making sure the image lined up properly on screens with viewport bigger than 2125px */
-@media(min-width: 2125px){
-    /* TODO: try to use VW to size image contain */
-    .about .image-container img,
-    .our-mission .image-container img{
-        width: 110%;
-        height: 536px;
-    }
-}
-
+/* STYLES FOR VIEWPORT 920px AND LOWER */
 @media(max-width: 920px){
     /* GLOBAL STYLE */
     h1{
@@ -566,10 +546,10 @@ footer a{
     h2{
         text-align: center;
     }
-
+    /* ABOUT US AND OUR MISSION */
     .read-more-container, 
     .our-mission-content,
-    .about-content{
+    .about-content {
         text-align: center;
         padding: 40px 20px;
     }
@@ -578,11 +558,6 @@ footer a{
     .about-content{
         width: 100%;
     }
-
-    /* .about .hidden-container{
-        background-size: 100%;
-        background-repeat: no-repeat;
-    } */
 
     .hidden-content {
         font-size: calc(0.5vw );
@@ -593,14 +568,17 @@ footer a{
         padding: 50px 0 0 0;
     }
 
-    .meet-alissa .image-container, .meet-alissa article{
+    .meet-alissa h2 {
+        margin-top: 50px;
+    }
+
+    .meet-alissa .image-container, 
+    .meet-alissa article {
         width: 100%;
         float: none;
     }
 
-
     /* CONTACT STYLE */
-
     .contact{
         padding: 50px 0;
     }
@@ -633,15 +611,14 @@ footer a{
 
 }
 
+/* STYLES FOR VIEWPORT 720px AND LOWER */
 @media(max-width: 720px){
-/* HEADER STYLE */
+    /* HEADER STYLE */
     header {
         background-image: url('../biker-land-assets/image-1-mobile.jpg');
         height: 80vh;
     }
 
-    
-    /* HEADER STYLE */
     .header-nav{
         /* using rgba color because I want to make the background transparent */
         background-color: rgba(255, 255, 255, 0.2);
@@ -649,6 +626,7 @@ footer a{
         top: -300px;
         transition: top 0.5s;
     }
+
     .header-nav li{
         display: block;
         border-bottom: 1px dotted #1f2022;
@@ -662,11 +640,11 @@ footer a{
         height: 0;
     }
 
-     .menu-toggle [type="checkbox"]:checked + .header-nav {
+    .menu-toggle [type="checkbox"]:checked + .header-nav {
         top: 0;
     }
 
-     .menu-toggle [type="checkbox"]:checked ~ i{
+    .menu-toggle [type="checkbox"]:checked ~ i{
         color: #1f2022;
     }
 
@@ -675,10 +653,12 @@ footer a{
         transition: color 1s;
     }    
     
+    /* ABOUT US AND OUR MISSION */
     .our-mission-content, .about-content {
         padding: 20px 20px;
     }
 
+    /* LINKS */
     .links{
         background-position-x: -700px;
     }
@@ -695,6 +675,7 @@ footer a{
         padding: 0 80px 50px 80px;
     }
 
+    /* GALLERY */
     .gallery {
         padding: 30px 0;
     }
@@ -720,6 +701,7 @@ footer a{
     }
 }
 
+/* STYLE FOR VIEWPORT 480px AND LOWER */
 @media(max-width: 480px){
     .link{
         background-position-x: -1640px;
