@@ -261,7 +261,7 @@ h3 {
 
 /* HEADER STYLE */
 header {
-    background-image: url("/biker-land-assets/image-1.jpg");
+    background-image: url("../biker-land-assets/image-1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -413,7 +413,7 @@ i{
 
 /* LINKS style */
 .links {
-    background-image: url("/biker-land-assets/image-5.jpg");
+    background-image: url("../biker-land-assets/image-5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
